@@ -7,6 +7,9 @@
 # Composer files
 vendor/
 
+# User-specific stuff:
+.idea/
+
 # Data
 data/logs/
 data/cache/

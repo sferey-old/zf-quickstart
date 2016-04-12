@@ -1,0 +1,15 @@
+# OS-specific
+.DS_Store
+
+# Vagrant stuff
+.vagrant
+
+# Composer files
+vendor/
+
+# Data
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/

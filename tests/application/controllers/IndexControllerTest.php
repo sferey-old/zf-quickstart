@@ -15,6 +15,18 @@ class IndexControllerTest extends ControllerTestCase
         $this->assertNotRedirect();
     }
 
+    public function testHomePageIsAFailedRequest()
+    {
+        // Runs the test on /, the homepage
+        $this->dispatch('/');
+
+        // Tests there are no exceptions on the home page
+        $this->assertTrue($this->response->isException());
+
+        // Tests for redirection to the error handler
+        $this->assertNotRedirect();
+    }
+
     public function testHomePageDisplaysCorrectContent()
     {
         // Runs the test on /
